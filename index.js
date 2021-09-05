@@ -6,7 +6,5 @@ const app = express();
 app.use(express.json());
 app.use(indexRouter);
 
-console.log(typeof process.env.DB_USER);
-
 const port = process.env.PORT || 8010;
 app.listen(port, () => console.log(`Server running on ${port}`));
